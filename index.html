@@ -9,6 +9,17 @@
     <title>مجموع الرجات</title>
 </head>
 <body>
+    <h1 id="value3"><em>حسب درجات اسابيع الحفظ </em></h1><br/><br/><br/><br/><br/>
+    <input type="text" name="resut" id="value3" class="input value3"  placeholder="درجة الاسبوع" maxlength="1000" cols="25"
+    rows="6" required>
+    <input type="text" disabled="disabled" name="resut" id="resut" placeholder="النتيجة" maxlength="1000" cols="25"
+    rows="6" required><br/><br/>
+    <h1 id="value4"><em>حسب درجات ايام الحفظ </em></h1><br/>
+    <input type="text" name="resut" id="value4" class="input value4"  placeholder="درجة ايام الحفظ" maxlength="1000" cols="25"
+    rows="6" required>
+    <input type="text" disabled="disabled" name="resutl" id="resutl" placeholder="النتيجة" maxlength="1000" cols="25"
+    rows="6" required>
+
     <h1 id="logo"><img src="imgs/GE.png"></h1>
     <h1><em>حسب درجات اختبار الحفظ </em></h1>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -23,8 +34,8 @@
         rows="6" required>
         =  <input type="text" disabled="disabled" name="resu" id="resu" placeholder="المجموع النهائي" maxlength="1000" cols="25"
         rows="6" required><br/>
-       المجموع: <span id="result" maxlength="1000" cols="25"
-       rows="6" required></span>
+        <span id="result" maxlength="1000" cols="25"
+       rows="6" required>المجموع</span>
         <br>
         <input class="cat" type="button" value="ارسال" onClick="pr()">
       </form>
@@ -42,6 +53,32 @@ $('input[type="text"]').keyup(function () {
 });
 $(document).ready(function(){
 $('input[type="text"]').keyup(function () {
+  var val3 = parseInt($('.value3').val());
+            let i = 50
+          if( val3 === i ){
+              var sum3 = 50
+          }else{
+              if(val3 < i){
+              var sum3 = val3+"/50"
+          }}
+          $("input#resut").val(sum3);
+});
+});
+$(document).ready(function(){
+$('input[type="text"]').keyup(function () {
+  var val4 = parseInt($('.value4').val());
+            let l = 10
+          if( val4 === l ){
+              var sum4 = l
+          }else{
+              if(val4 < l){
+              var sum4 = val4+"/10"
+          }}
+          $("input#resutl").val(sum4);
+});
+});
+$(document).ready(function(){
+$('input[type="text"]').keyup(function () {
     var val1 = parseInt($('.value1').val());
     var val2 = parseInt($('.value2').val());
             var sum = val1/6;
@@ -53,7 +90,7 @@ $('input[type="text"]').keyup(function () {
 
 
     function pr() {
-      document.getElementById("result").innerHTML = document.getElementById('lname').value+ " " + document.getElementById('resu').value;
+      document.getElementById("result").innerHTML = document.getElementById('lname').value+ " " + document.getElementById('resu').value+ " " + document.getElementById('resut').value;
     }
     
   </script>
