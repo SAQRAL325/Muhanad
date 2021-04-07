@@ -56,4 +56,19 @@
 	width: 50%;
 	margin: 10px;
 }
-  
+#value3{
+    float: left;
+}
+#resut{
+    float: left;
+}
+#SA{
+    float: left;
+}
+#result{
+    clear: both;
+    text-align: center;
+    background-color: #253342;
+    color: white;
+    padding: 2px 0;
+}
