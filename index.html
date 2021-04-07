@@ -10,15 +10,71 @@
 </head>
 <body>
     <h1 id="value4"><em>حساب درجة يوم الحفظ </em></h1><br/><br/>
-    <input type="text" name="resut" id="value4" class="input value4"  placeholder="درجة ايام الحفظ" maxlength="1000" cols="25"
+    <input type="text" name="resut" id="value9" class="input value9"  placeholder="درجة ايام الحفظ" maxlength="1000" cols="25"
     rows="6" required>
     <input type="text" disabled="disabled" name="resutl" id="resutl" placeholder="النتيجة" maxlength="1000" cols="25"
     rows="6" required><br/>
+
+    <br/><input type="text" name="resut" id="value9" class="input valuea"  placeholder="درجة ايام الحفظ" maxlength="1000" cols="25"
+    rows="6" required>
+    <input type="text" disabled="disabled" name="resutl" id="resuta" placeholder="النتيجة" maxlength="1000" cols="25"
+    rows="6" required><br/>
+
+    <br/><input type="text" name="resut" id="value9" class="input valueb"  placeholder="درجة ايام الحفظ" maxlength="1000" cols="25"
+    rows="6" required>
+    <input type="text" disabled="disabled" name="resutl" id="resutb" placeholder="النتيجة" maxlength="1000" cols="25"
+    rows="6" required><br/>
+
+    <br/><input type="text" name="resut" id="value9" class="input valuec"  placeholder="درجة ايام الحفظ" maxlength="1000" cols="25"
+    rows="6" required>
+    <input type="text" disabled="disabled" name="resut" id="resutc" placeholder="النتيجة" maxlength="1000" cols="25"
+    rows="6" required><br/>
+
+    <br/><input type="text" name="resut" id="value9" class="input valued"  placeholder="درجة ايام الحفظ" maxlength="1000" cols="25"
+    rows="6" required> 
+    <input type="text" disabled="disabled" name="resut" id="resutd" placeholder="النتيجة" maxlength="1000" cols="25"
+    rows="6" required><br/><br/>
+
+    <input type="text" disabled="disabled" name="resut" id="resute" placeholder="النتيجة" maxlength="1000" cols="25"
+    rows="6" required><br/><br/>
+
+
+
     <h1 id="value3"><em>حساب درجة اسبوع الحفظ </em></h1><br/><br/><br/><br/><br/>
-    <br/><input type="text" name="resut" id="value3" class="input value3"  placeholder="درجة الاسبوع" maxlength="1000" cols="25"
+    <input type="text" name="resut" id="value3" class="input value3"  placeholder="درجة الاسبوع" maxlength="1000" cols="25"
     rows="6" required>
     <input type="text" disabled="disabled" name="resut" id="resut" placeholder="النتيجة" maxlength="1000" cols="25"
     rows="6" required><br/><br/>
+
+    <br/><input type="text" name="resut2" id="value3" class="input value4"  placeholder="درجة الاسبوع" maxlength="1000" cols="25"
+    rows="6" required>
+    <input type="text" disabled="disabled" name="resut2" id="resut2" placeholder="النتيجة" maxlength="1000" cols="25"
+    rows="6" required><br/>
+
+    <br/><input type="text" name="resut3" id="value3" class="input value5"  placeholder="درجة الاسبوع" maxlength="1000" cols="25"
+    rows="6" required>
+    <input type="text" disabled="disabled" name="resut" id="resut3" placeholder="النتيجة" maxlength="1000" cols="25"
+    rows="6" required><br/>
+
+    <br/><input type="text" name="resut4" id="value3" class="input value6"  placeholder="درجة الاسبوع" maxlength="1000" cols="25"
+    rows="6" required>
+    <input type="text" disabled="disabled" name="resut" id="resut4" placeholder="النتيجة" maxlength="1000" cols="25"
+    rows="6" required><br/>
+
+    <br/><input type="text" name="resut5" id="value3" class="input value7"  placeholder="درجة الاسبوع" maxlength="1000" cols="25"
+    rows="6" required>
+    <input type="text" disabled="disabled" name="resut5" id="resut5" placeholder="النتيجة" maxlength="1000" cols="25"
+    rows="6" required><br/>
+
+    <br/><input type="text" name="resut6" id="value3" class="input value8"  placeholder="درجة الاسبوع" maxlength="1000" cols="25"
+    rows="6" required> 
+    <input type="text" disabled="disabled" name="resut6" id="resut6" placeholder="النتيجة" maxlength="1000" cols="25"
+    rows="6" required><br/><br/>
+
+    <input type="text" disabled="disabled" name="resut7" id="resut7" placeholder="النتيجة" maxlength="1000" cols="25"
+    rows="6" required><br/><br/>
+
+
 
     <h1 id="logo"><img src="imgs/GE.png"></h1>
     <br/><h1><em>حساب درجات اختبار الحفظ </em></h1><br/>
@@ -55,6 +111,11 @@ $('input[type="text"]').keyup(function () {
 $(document).ready(function(){
 $('input[type="text"]').keyup(function () {
   var val3 = parseInt($('.value3').val());
+  var val4 = parseInt($('.value4').val());
+  var val5 = parseInt($('.value5').val());
+  var val6 = parseInt($('.value6').val());
+  var val7 = parseInt($('.value7').val());
+  var val8 = parseInt($('.value8').val());
             let i = 50
           if( val3 === i ){
               var sum3 = 50+"/50"
@@ -62,21 +123,105 @@ $('input[type="text"]').keyup(function () {
               if(val3 < i){
               var sum3 = val3+"/50"
           }}
+
+          if( val4 === i ){
+              var sum4 = 50+"/50"
+          }else{
+              if(val4 < i){
+              var sum4 = val4+"/50"
+          }}
+
+          if( val5 === i ){
+              var sum5 = 50+"/50"
+          }else{
+              if(val5 < i){
+              var sum5 = val5+"/50"
+          }}
+
+          if( val6 === i ){
+              var sum6 = 50+"/50"
+          }else{
+              if(val6 < i){
+              var sum6 = val6+"/50"
+          }}
+
+          if( val7 === i ){
+              var sum7 = 50+"/50"
+          }else{
+              if(val7 < i){
+              var sum7 = val7+"/50"
+          }}
+
+          if( val8 === i ){
+              var sum8 = 50+"/50"
+          }else{
+              if(val8 < i){
+              var sum8 = val8+"/50"
+          }}
+
+          sum0 = val3+val4+val5+val6+val7+val8;
+
           $("input#resut").val(sum3);
+          $("input#resut2").val(sum4);
+          $("input#resut3").val(sum5);
+          $("input#resut4").val(sum6);
+          $("input#resut5").val(sum7);
+          $("input#resut6").val(sum8);
+          $("input#resut7").val(sum0);
 });
 });
 $(document).ready(function(){
 $('input[type="text"]').keyup(function () {
-  var val4 = parseInt($('.value4').val());
+  var val9 = parseInt($('.value9').val());
+  var vala = parseInt($('.valuea').val());
+  var valb = parseInt($('.valueb').val());
+  var valc = parseInt($('.valuec').val());
+  var vald = parseInt($('.valued').val());
             let l = 10
-          if( val4 === l ){
+          if( val9 === l ){
               var sum4 = l+"/10"
           }else{
-              if(val4 < l){
-              var sum4 = val4+"/10"
+              if(val9 < l){
+              var sum4 = val9+"/10"
           }
         }
+
+        if( vala === l ){
+              var suma = l+"/10"
+          }else{
+              if(vala < l){
+              var suma = vala+"/10"
+          }
+        }
+
+        if( valb === l ){
+              var sumb = l+"/10"
+          }else{
+              if(valb < l){
+              var sumb = valb+"/10"
+          }
+        }
+        if( valc === l ){
+              var sumc = l+"/10"
+          }else{
+              if(valc < l){
+              var sumc = valc+"/10"
+          }
+        }
+        if( vald === l ){
+              var sumd = l+"/10"
+          }else{
+              if(vald < l){
+              var sumd = vald+"/10"
+          }
+        }
+        sume = val9+vala+valb+valc+vald;
           $("input#resutl").val(sum4);
+          $("input#resuta").val(suma);
+          $("input#resutb").val(sumb);
+          $("input#resutc").val(sumc);
+          $("input#resutd").val(sumd);
+          $("input#resute").val(sume);
 
 });
 });
@@ -86,7 +231,7 @@ $('input[type="text"]').keyup(function () {
     var val2 = parseInt($('.value2').val());
             var sum = val1/6;
             var sum1 = val2 + sum;
-            var sum2 = sum1/2+"/50";
+            var sum2 = sum1/2+"50";
         $("input#resu").val(sum2);
 
 });
@@ -97,7 +242,6 @@ $('input[type="text"]').keyup(function () {
     function pr() {
       document.getElementById("result").innerHTML = document.getElementById('lname').value+ " " + document.getElementById('resu').value;
     }
-    
   </script>
 
 <section id="wsfoter">
