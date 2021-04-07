@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imgs/GE.png">
+    <title>مجموع الرجات</title>
+</head>
+<body>
+    <h1 id="logo"><img src="imgs/GE.png"></h1>
+    <h1><em>حسب درجات اختبار الحفظ </em></h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <form action="PayslipServlet" method="get">
+        <input type="text" name="lname" id="lname" placeholder="اسم الطالب" maxlength="1000" cols="25"
+        rows="6" required><br/>
+        <input type="text" name="resul" class="input value1"  placeholder="درجة الاسابيع" maxlength="1000" cols="25"
+        rows="6" required>
+        =  <input type="text" disabled="disabled" name="resul" id="resul"  placeholder="النتيجة" maxlength="1000" cols="25"
+        rows="6" required><br/>
+        <input type="text" name="resu" class="input value2"  placeholder="درجة الاختبار" maxlength="1000" cols="25"
+        rows="6" required>
+        =  <input type="text" disabled="disabled" name="resu" id="resu" placeholder="المجموع النهائي" maxlength="1000" cols="25"
+        rows="6" required><br/>
+       المجموع: <span id="result" maxlength="1000" cols="25"
+       rows="6" required></span>
+        <br>
+        <input class="cat" type="button" value="ارسال" onClick="pr()">
+      </form>
+</body>
+
+
+
+<script>
+    $(document).ready(function(){
+$('input[type="text"]').keyup(function () {
+  var val1 = parseInt($('.value1').val());
+          var sum = val1/6;
+          $("input#resul").val(sum);
+});
+});
+$(document).ready(function(){
+$('input[type="text"]').keyup(function () {
+    var val1 = parseInt($('.value1').val());
+    var val2 = parseInt($('.value2').val());
+            var sum = val1/6;
+            var sum1 = val2 + sum;
+            var sum2 = sum1/2;
+        $("input#resu").val(sum2);
+});
+});
+
+
+    function pr() {
+      document.getElementById("result").innerHTML = document.getElementById('lname').value+ " " + document.getElementById('resu').value;
+    }
+    
+  </script>
+
+<section id="wsfoter">
+    <p> ©جميع الحقوق محفوظة  لصاحب الموقع</p>
+    <p><a href="mailto:muhana2018.hg@icloud.com">Email: muhana2018.hg@icloud.com</a></p>
+</section>
+</html>
