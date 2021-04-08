@@ -1,7 +1,12 @@
 $(document).ready(function(){
     $('input[type="text"]').keyup(function () {
       var val1 = parseInt($('.value1').val());
-              var sum = val1/6+"/50";;
+              if(val1 > 1){
+                  var sum = val1/6+"/50";
+              }else{
+                val1 = 0;
+                sum = val1+"/50";
+              }
               $("input#resul").val(sum);
     
     });
@@ -175,9 +180,26 @@ $(document).ready(function(){
     $('input[type="text"]').keyup(function () {
         var val1 = parseInt($('.value1').val());
         var val2 = parseInt($('.value2').val());
+                if(val1 >= 1){
                 var sum = val1/6;
-                var sum1 = val2 + sum;
-                var sum2 = sum1/2+"/50";
+                }else{
+                    val1 = 0;
+                    var sum = val1/6;
+                }
+                if(val2 >= 1){
+                    var sum1 = val2 + sum;
+                    var sum2 = sum1/2+"/50";
+                    }else{
+                        val1 = 0;
+                        val2 = 0;
+                        var sum1 = val2 + sum;
+                    }
+            if(val2 === 0){
+                sum2 = 0+"/50"
+            }
+
+
+
             $("input#resu").val(sum2);
     
     });
