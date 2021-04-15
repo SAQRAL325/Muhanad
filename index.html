@@ -4,22 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="UTF-8" http-equiv="encoding">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="imgs/GE.png">
     <title>مجموع الدرجات</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3J0V83P7P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID', {
-      'page_title' : 'مجموع الدرجات',
-      'page_path': '/home'
-    });
-  gtag('config', 'G-C3J0V83P7P');
-</script>
-<script data-ad-client="ca-pub-4843508758118248" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
     <h1 id="value4"><em>حساب درجة يوم الحفظ </em></h1><br/><br/>
@@ -53,7 +42,7 @@
     <p><em>ملاحظه *<br/>اذا كان هناك صفر ارجاء عدم تخطيه الرجاء كتابة الصفر </em></p><br/><br/>
 
 
-
+    <h1 id="logo"><img src="imgs/GE.png"></h1>
     <h1 id="value3"><em>حساب درجة اسبوع الحفظ </em></h1><br/><br/><br/><br/><br/>
     <input type="text" name="resut" id="value3" class="input value3"  placeholder="درجة الاسبوع" maxlength="1000" cols="25"
     rows="6" required>
@@ -91,11 +80,12 @@
 
 
 
-    <h1 id="logo"><img src="imgs/GE.png"></h1>
     <br/><h1><em>حساب درجات اختبار الحفظ </em></h1><br/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <form action="PayslipServlet" method="get">
-        <input type="text" name="lname" id="lname" placeholder="اسم الطالب" maxlength="1000" cols="25"
+        <input type="text" name="name" id="name" class="input valuel" placeholder="اسم الطالب" maxlength="1000" cols="25"
+        rows="6" required><br/>
+        <input type="text" name="lname" id="lname" class="input valuel" placeholder="الصف" maxlength="1000" cols="25"
         rows="6" required><br/>
         <input type="text" name="resul" class="input value1"  placeholder="درجة الاسابيع" maxlength="1000" cols="25"
         rows="6" required>
@@ -108,16 +98,49 @@
         <span id="result" maxlength="1000" cols="25"
        rows="6" required>المجموع</span>
         <br>
-        <input class="cat" type="button" value="إظهار النتيجة" onClick="pr()">
+      <input class="cat" type="button" value="إظهار النتيجة" onClick="pr()">
       </form>
+
+
+
+
+
+
+      <form action="PayslipServlet" method="get">
+        <h1 id="asaa"><em>استعلام عن طالب</em></h1><br/><br/><br/><br/><br/>
+        <input type="text" name="namea" id="namea" class="input valuel" placeholder="اسم الطالب" maxlength="1000" cols="25"
+        rows="6" required><br/><br/><br/>
+        <h3 id="asa"><em>الصف</em></h3><br/><br/><br/><br/>
+<select id="lnamea" name="car" class="custom-select" style="width:200px;">
+  <option value="volvo">ثالث متوسط</option>
+  <option value="saab">ثاني متوسط</option>
+  <option value="fiat">اولى متوسط</option>
+</select><br/><br/>
+<select id="lnamea" name="car" class="custom-select" style="width:200px;">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+</select><br/><br/>
+        <span id="resulta" maxlength="1000" cols="25"
+       rows="6" required>الناتج</span>
+        <br><br><br><br>
+        <a href="indexa.html"><input class="cata" type="button" value= "إظهار النتيجة" onClick="apr()"></a>
+      </form>
+
 </body>
 
 
 
-<script src="index.js" src="index1.js"></script>
+<script src="index.js"></script>
+<script src="index1.js"></script>
 
 <section id="wsfoter">
     <p> ©جميع الحقوق محفوظة  لصاحب الموقع</p>
-    <p><a href="mailto:muhana2018.hg@icloud.com">Email: muhana2018.hg@icloud.com</a></p>
+    <p>Email: <a href="mailto:muhana2018.hg@icloud.com">muhana2018.hg@icloud.com</a></p>
+    <a href="index1.html"><input class="cate" type="button" value="اضغط هنا لتقييم"></a>
 </section>
 </html>

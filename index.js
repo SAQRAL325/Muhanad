@@ -8,7 +8,6 @@ $(document).ready(function(){
                 sum = val1+"/50";
               }
               $("input#resul").val(sum);
-    
     });
     });
     $(document).ready(function(){
@@ -25,7 +24,7 @@ $(document).ready(function(){
               }else{
                   if(val3 < i){
                   var sum3 = val3+"/50"
-              }}
+                }}
     
               if( val4 === i ){
                   var sum4 = 50+"/50"
@@ -66,14 +65,15 @@ $(document).ready(function(){
                   sum0 = "النتيجة"
                   if(sum0 = val3+val4+val5+val6+val7+val8 >= 1){
                       sum0 = val3+val4+val5+val6+val7+val8
+                      sum0 = " النتيجة"
                   }else{
                     sum0 = "النتيجة"
-                    val3 = 0
-                    val4 = 0
-                    val5 = 0
-                    val6 = 0
-                    val7 = 0
-                    val8 = 0
+                        val3 = 0
+                        val4 = 0
+                        val5 = 0
+                        val6 = 0
+                        val7 = 0
+                        val8 = 0
                   }
 
                   if(sum0 === sum0){
@@ -82,7 +82,7 @@ $(document).ready(function(){
                 if(sum0 == 0){
                     sum0 = " الرجاء اكمال الفراغات"
                 }
-                  
+
               $("input#resut").val(sum3);
               $("input#resut2").val(sum4);
               $("input#resut3").val(sum5);
@@ -90,6 +90,7 @@ $(document).ready(function(){
               $("input#resut5").val(sum7);
               $("input#resut6").val(sum8);
               $("input#resut7").val(sum0);
+              
     });
     });
     $(document).ready(function(){
@@ -107,7 +108,7 @@ $(document).ready(function(){
                   var sum4 = val9+"/10"
               }
               if(val9 < 1){
-                sum9 = val9;
+                sum4 = val9;
               }
             }
     
@@ -195,19 +196,29 @@ $(document).ready(function(){
                         var sum1 = val2 + sum;
                     }
             if(val2 === 0){
-                sum2 = 0+"/50"
+                var sum2 = 0+"/50"
             }
 
 
-
             $("input#resu").val(sum2);
-    
     });
     });
-    
-    
-    
         function pr() {
-          document.getElementById("result").innerHTML = document.getElementById('lname').value+ " " + document.getElementById('resu').value;
+          document.getElementById("result").innerHTML = " الاسم : " + document.getElementById('name').value+ " الصف : " + document.getElementById('lname').value+  " الدرجة: " + document.getElementById('resu').value;
         }
+
+
+        
+
+        
+        
+      
+
+
+
+
+
+        
+
+
         

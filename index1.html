@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="UTF-8" http-equiv="encoding">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imgs/GE.png">
+    <title>مجموع الدرجات</title>
+</head>
+<div id="body">
+    <form id="form" action="PayslipServlet" method="get">
+      <h1 id="h1">التقييم?</h1>
+      <input class="hide" type="checkbox" title="Happy" name="happy" id="happy"  onClick="epr()"></a>
+      <label for="happy" class="option-happy">سعيد</label>
+      
+      <input class="hide" type="checkbox" title="Sad" name="sad" id="sad"  onClick="epr()"></a>
+      <label for="sad" class="option-sad">غاضب</label>
+      
+      <input class="hide" type="checkbox" title="Meh" name="meh" id="meh"  onClick="epr()"></a>
+      <label for="meh" class="option-meh">جيد جداً</label><br>
+      <span id="resulte" maxlength="1000" cols="25"
+       rows="6" required></span><br>
+       <a href="index.html"><input class="cat" type="button" value="الصفحة الرئيسية"></a>
+       
+    </form>
+  </div>
+  <script>
+      function epr() {
+          document.getElementById("resulte").innerHTML = '<h1>شكراً على تقييم</h1>';
+        }
+  </script>
