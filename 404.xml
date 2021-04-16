@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <sitemap>
-      <loc>http://www.example.com/sitemap1.xml.gz</loc>
-    </sitemap>
-    <sitemap>
-      <loc>http://www.example.com/sitemap2.xml.gz</loc>
-    </sitemap>
-  </sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://saqral325.github.io/Muhanad/</loc>
+<lastmod>2018-06-04</lastmod>
+</url>
+</urlset>
